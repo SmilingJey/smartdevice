@@ -1,0 +1,171 @@
+.header {
+  max-width: 1462px;
+  margin: 0 auto 0;
+  padding: 33px 25px 10px;
+  display: flex;
+
+  &_logo {
+    margin-right: 110px;
+  }
+
+  &_menu-toogle {
+    margin-top: 8px;
+    background-color: transparent;
+    width: 37px;
+    height: 37px;
+    border: none;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 0;
+      top: 12px;
+      height: 1px;
+      width: 37px;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      top: 24px;
+    }
+  }
+
+  &_links {
+    margin-left: auto;
+    margin-top: 16px;
+    display: flex;
+  }
+
+  &_callback {
+    margin-top: 4px;
+  }
+
+  &_link {
+    display: block;
+    position: relative;
+    font-family: "PT Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 0;
+      top: 0;
+      height: 25px;
+      width: 25px;
+      background-repeat: no-repeat;
+    }
+
+    &--tel {
+      margin-right: 48px;
+      padding-left: 34px;
+
+      &::before {
+        background-image: url("../img/phone.svg");
+        background-size: 19px auto;
+      }
+    }
+
+    &--email {
+      margin-right: 89px;
+      padding-left: 37px;
+
+      &::before {
+        top: 3px;
+        background-image: url("../img/email.svg");
+        background-size: 19px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    &_logo {
+      margin-right: 30px;
+    }
+
+    &_menu-toogle {
+      margin-left: auto;
+      margin-right: 37px;
+      margin-top: 5px;
+    }
+
+    &_callback {
+      display: none;
+    }
+
+    &_links {
+      margin-left: 0;
+      margin-top: 12px;
+    }
+
+    &_link {
+      &--tel {
+        margin-right: 0;
+        padding-left: 25px;
+        height: 30px;
+
+        &::before {
+          background-size: 25px auto;
+        }
+      }
+
+      &--email {
+        margin-right: 30px;
+        padding-left: 28px;
+        height: 30px;
+
+        &::before {
+          top: 4px;
+          background-size: 26px auto;
+        }
+      }
+    }
+
+    &_link-text {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding: 17px 17px 10px;
+
+    &_menu-toogle {
+      margin-top: -2px;
+      margin-right: 27px;
+    }
+
+    &_links {
+      margin-top: 6px;
+      margin-right: -2px;
+    }
+
+    &_link {
+      &--email {
+        margin-right: 20px;
+
+        &::before {
+          top: 2px;
+        }
+      }
+    }
+  }
+}
+
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'PT Mono', monospace;
+*/

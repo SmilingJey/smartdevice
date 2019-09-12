@@ -15,10 +15,12 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var sassGlob = require('gulp-sass-glob');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
+    .pipe(sassGlob())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
