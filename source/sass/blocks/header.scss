@@ -4,8 +4,15 @@
   padding: 33px 25px 10px;
   display: flex;
 
+  &_left-block {
+    display: flex;
+    justify-content: space-between;
+    width: 357px;
+    margin-right: 70px;
+  }
+
   &_logo {
-    margin-right: 110px;
+    margin-right: 10px;
   }
 
   &_menu-toogle {
@@ -37,9 +44,13 @@
     margin-left: auto;
     margin-top: 16px;
     display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin-right: 48px;
   }
 
   &_callback {
+    flex-shrink: 0;
     margin-top: 4px;
   }
 
@@ -66,7 +77,6 @@
     }
 
     &--tel {
-      margin-right: 48px;
       padding-left: 34px;
 
       &::before {
@@ -76,8 +86,8 @@
     }
 
     &--email {
-      margin-right: 89px;
-      padding-left: 37px;
+      margin-right: 10px;
+      padding-left: 38px;
 
       &::before {
         top: 3px;
@@ -88,15 +98,22 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: $tablet-width) {
   .header {
+    padding: 20px 25px 10px;
+
+    &_left-block {
+      flex-grow: 1;
+      width: auto;
+      margin-right: 37px;
+    }
+
     &_logo {
       margin-right: 30px;
     }
 
     &_menu-toogle {
       margin-left: auto;
-      margin-right: 37px;
       margin-top: 5px;
     }
 
@@ -105,7 +122,10 @@
     }
 
     &_links {
+      width: auto;
+      flex-shrink: 1;
       margin-left: 0;
+      margin-right: 0;
       margin-top: 12px;
     }
 
@@ -126,7 +146,7 @@
         height: 30px;
 
         &::before {
-          top: 4px;
+          top: 3px;
           background-size: 26px auto;
         }
       }
@@ -138,13 +158,16 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $mobile-width) {
   .header {
     padding: 17px 17px 10px;
 
+    &_left-block {
+      margin-right: 27px;
+    }
+
     &_menu-toogle {
       margin-top: -2px;
-      margin-right: 27px;
     }
 
     &_links {
@@ -158,6 +181,12 @@
 
         &::before {
           top: 2px;
+        }
+      }
+
+      &--tel {
+        &::before {
+          top: -1px;
         }
       }
     }
