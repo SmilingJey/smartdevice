@@ -2,11 +2,11 @@
   border-top: 1px solid rgba(98, 105, 98, 0.2);
 
   &__container {
+    display: flex;
+    justify-content: space-between;
     max-width: 1462px;
     margin: 0 auto 0;
     padding: 0 25px 0;
-    display: flex;
-    justify-content: space-between;
   }
 
   &__left {
@@ -28,20 +28,54 @@
   }
 
   &__text {
-    font-family: "PT Mono", monospace;
-    font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    letter-spacing: 0.04em;
+    font-family: "PT Mono", "Courier New", monospace;
     color: #1b2d37;
-    opacity: 0.5;
     text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 0.04em;
     white-space: nowrap;
+    opacity: 0.5;
   }
 
   &__link {
-    text-decoration: none;
     color: #1b2d37;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer-bottom {
+    &__container {
+      padding: 8px 27px 8px;
+    }
+
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-bottom {
+    &__container {
+      padding: 15px 0 8px;
+    }
+
+    &__right {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__confidential {
+      margin-right: 0;
+      margin-bottom: 9px;
+    }
   }
 }

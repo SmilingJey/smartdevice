@@ -1,11 +1,10 @@
 .social {
-  margin: 0;
+  display: flex;
   padding: 0;
   list-style: none;
-  display: flex;
 
   &__item {
-    margin-right: 16px;
+    margin-right: 15px;
 
     &:last-child {
       margin-right: 0;
@@ -13,19 +12,19 @@
   }
 
   &__link {
+    position: relative;
     display: block;
     width: 27px;
     height: 27px;
-    position: relative;
 
     &::before {
-      position: absolute;
-      display: block;
       content: "";
-      left: 0;
+      position: absolute;
       top: 0;
-      height: 27px;
+      left: 0;
+      display: block;
       width: 27px;
+      height: 27px;
       background-repeat: no-repeat;
     }
 
