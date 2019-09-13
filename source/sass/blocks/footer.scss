@@ -1,0 +1,37 @@
+.footer {
+  background: #fafafa;
+
+  &__top {
+    max-width: 1462px;
+    padding: 65px 25px 60px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-right {
+    display: flex;
+    justify-content: space-between;
+    width: 988px;
+  }
+
+  &__contacts {
+    margin-right: 20px;
+  }
+
+  &__navigation {
+
+  }
+
+  &__logo {
+    margin-bottom: 53px;
+  }
+
+  &__years-text {
+    display: none;
+  }
+
+  &__address {
+
+  }
+}

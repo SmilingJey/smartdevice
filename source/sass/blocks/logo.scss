@@ -2,8 +2,10 @@
   position: relative;
   text-decoration: none;
   display: block;
-  width: 210px;
+  width: 220px;
+  height: 52px;
   white-space: nowrap;
+
 
   &::before {
     content: "";
@@ -17,7 +19,7 @@
     background-repeat: no-repeat;
   }
 
-  &_top {
+  &__top {
     display: block;
     position: absolute;
     left: 68px;
@@ -28,9 +30,13 @@
     font-size: 25px;
     line-height: 29px;
     color: #ffffff;
+
+    &--dark {
+      color: #203c42;
+    }
   }
 
-  &_bottom {
+  &__bottom {
     display: block;
     position: absolute;
     left: 68px;
@@ -45,8 +51,9 @@
 }
 
 @media (max-width: $mobile-width) {
-  .logo {
+  .logo--mobile-icon {
     width: 50px;
+    height: 38px;
 
     &::before {
       width: 38px;
@@ -54,8 +61,8 @@
       background-size: 38px 38px;
     }
 
-    &_top,
-    &_bottom {
+    &__top,
+    &__bottom {
       display: none;
     }
   }

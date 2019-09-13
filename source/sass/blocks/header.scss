@@ -4,18 +4,18 @@
   padding: 33px 25px 10px;
   display: flex;
 
-  &_left-block {
+  &__left-block {
     display: flex;
     justify-content: space-between;
     width: 357px;
     margin-right: 70px;
   }
 
-  &_logo {
+  &__logo {
     margin-right: 10px;
   }
 
-  &_menu-toogle {
+  &__menu-toogle {
     margin-top: 8px;
     background-color: transparent;
     width: 37px;
@@ -40,7 +40,7 @@
     }
   }
 
-  &_links {
+  &__links {
     margin-left: auto;
     margin-top: 16px;
     display: flex;
@@ -49,12 +49,12 @@
     margin-right: 48px;
   }
 
-  &_callback {
+  &__callback {
     flex-shrink: 0;
     margin-top: 4px;
   }
 
-  &_link {
+  &__link {
     display: block;
     position: relative;
     font-family: "PT Mono", monospace;
@@ -102,26 +102,26 @@
   .header {
     padding: 20px 25px 10px;
 
-    &_left-block {
+    &__left-block {
       flex-grow: 1;
       width: auto;
       margin-right: 37px;
     }
 
-    &_logo {
+    &__logo {
       margin-right: 30px;
     }
 
-    &_menu-toogle {
+    &__menu-toogle {
       margin-left: auto;
       margin-top: 5px;
     }
 
-    &_callback {
+    &__callback {
       display: none;
     }
 
-    &_links {
+    &__links {
       width: auto;
       flex-shrink: 1;
       margin-left: 0;
@@ -129,7 +129,7 @@
       margin-top: 12px;
     }
 
-    &_link {
+    &__link {
       &--tel {
         margin-right: 0;
         padding-left: 25px;
@@ -152,7 +152,7 @@
       }
     }
 
-    &_link-text {
+    &__link-text {
       display: none;
     }
   }
@@ -162,20 +162,20 @@
   .header {
     padding: 17px 17px 10px;
 
-    &_left-block {
+    &__left-block {
       margin-right: 27px;
     }
 
-    &_menu-toogle {
+    &__menu-toogle {
       margin-top: -2px;
     }
 
-    &_links {
+    &__links {
       margin-top: 6px;
       margin-right: -2px;
     }
 
-    &_link {
+    &__link {
       &--email {
         margin-right: 20px;
 
@@ -192,9 +192,3 @@
     }
   }
 }
-
-/*
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'PT Mono', monospace;
-*/

@@ -1,0 +1,44 @@
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  &__item {
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 0;
+      top: 0;
+      height: 27px;
+      width: 27px;
+      background-repeat: no-repeat;
+    }
+
+    &--facebook::before {
+      background-image: url("../img/facebook.svg");
+    }
+
+    &--odnoklassnik::before {
+      background-image: url("../img/odnoklass.svg");
+    }
+
+    &--vk::before {
+      background-image: url("../img/vk.svg");
+    }
+  }
+}
