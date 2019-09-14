@@ -1,0 +1,98 @@
+.about {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px 25px 111px 206px;
+
+  background-repeat: no-repeat;
+  background-position: 28px 62px;
+  background-image: url("../img/about2005-d.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about2005-d@2x.png");
+    background-size: 115px 305px;
+  }
+
+  &__header {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: #666666;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    font-family: "PT Mono", "Courier New", monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #666666;
+    margin-bottom: 21px;
+  }
+
+  &__button {
+    margin-top: 18px;
+    width: 180px;
+  }
+
+  &__tablet-show {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    padding: 6px 25px 84px 210px;
+    background-position: 28px 13px;
+    background-image: url("../img/about2005-t.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about2005-t@2x.png");
+      background-size: 131px 347px;
+    }
+
+    &__header {
+      font-size: 32px;
+      line-height: 140.62%;
+      margin-top: 0;
+      margin-bottom: 26px;
+    }
+
+    &__text {
+      margin-left: 3px;
+    }
+
+    &__tablet-show {
+      display: inline;
+    }
+
+    &__tablet-none {
+      display: none;
+    }
+
+    &__button {
+      margin-top: 19px;
+      margin-left: 3px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about {
+    background-image: none;
+    padding: 17px 13px 65px 14px;
+
+    &__header {
+      font-size: 28px;
+      line-height: 140.62%;
+      margin-bottom: 21px;
+    }
+
+    &__button {
+      margin-top: 10px;
+      margin-left: 2px;
+    }
+  }
+}
