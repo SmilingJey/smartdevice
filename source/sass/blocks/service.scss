@@ -1,0 +1,190 @@
+.service {
+  background: #1b2d37;
+
+  &__content {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 58px 25px 111px;
+  }
+
+  &__header {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: #ffffff;
+    margin-bottom: 52px;
+  }
+
+  &__list {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 0;
+    width: 33%;
+    background-size: cover;
+    background-position: center;
+
+    &--production {
+      background-image: url("../img/service/production-d.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service/production-d@2x.jpg");
+      }
+    }
+
+    &--mount {
+      background-image: url("../img/service/mount-d.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service/mount-d@2x.jpg");
+      }
+    }
+
+    &--accessory {
+      background-image: url("../img/service/accessory-d.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service/accessory-d@2x.jpg");
+      }
+    }
+  }
+
+  &__link {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    height: 620px;
+    background-color: rgba(#1b2d37, 0.8);
+    padding: 50px 45px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 63px;
+      height: 63px;
+      background-color: #00b2ff;
+      background-image: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .service {
+    &__content {
+      padding: 23px 25px 32px;
+    }
+
+    &__header {
+      font-size: 32px;
+      line-height: 140.62%;
+      margin-bottom: 51px;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    &__item {
+      margin: 0;
+      width: 100%;
+      margin-bottom: 46px;
+
+      &--production {
+        background-image: url("../img/service/production-t.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/production-t@2x.jpg");
+        }
+      }
+
+      &--mount {
+        background-image: url("../img/service/mount-t.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/mount-t@2x.jpg");
+        }
+      }
+
+      &--accessory {
+        background-image: url("../img/service/accessory-t.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/accessory-t@2x.jpg");
+        }
+      }
+    }
+
+    &__link {
+      padding-top: 40px;
+      height: 256px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .service {
+    &__content {
+      padding: 27px 17px 32px;
+    }
+
+    &__header {
+      font-size: 28px;
+      margin-left: 7px;
+      margin-bottom: 42px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+
+      &--production {
+        background-image: url("../img/service/production-m.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/production-m@2x.jpg");
+        }
+      }
+
+      &--mount {
+        background-image: url("../img/service/mount-m.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/mount-m@2x.jpg");
+        }
+      }
+
+      &--accessory {
+        background-image: url("../img/service/accessory-m.jpg");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/accessory-m@2x.jpg");
+        }
+      }
+    }
+
+    &__link {
+      padding: 20px 32px;
+    }
+  }
+}
