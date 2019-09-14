@@ -17,13 +17,13 @@
   }
 
   &__menu-toogle {
-    cursor: pointer;
     position: relative;
     width: 37px;
     height: 37px;
     margin-top: 8px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 
     &::before,
     &::after {
@@ -53,6 +53,7 @@
 
   &__callback {
     flex-shrink: 0;
+    width: 181px;
     margin-top: 4px;
   }
 
