@@ -1,0 +1,51 @@
+.form {
+  &__textfiled,
+  &__textarea {
+    background: rgba(#ffffff, 0.1);
+    border: none;
+    color: #ffffff;
+
+    &::placeholder {
+      font-family: "PT Mono", "Courier New", monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+
+  &__textfiled {
+    padding: 16px 18px;
+  }
+
+  &__textarea {
+    resize: none;
+    padding: 11px 18px;
+  }
+
+  &__checkbox-label {
+    position: relative;
+    padding-top: 8px;
+    padding-left: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #ffffff;
+    }
+  }
+
+  &__checkbox:checked + &__checkbox-label {
+    &::before {
+      background-image: url("../img/checkbox-marker.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}

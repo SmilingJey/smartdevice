@@ -43,14 +43,14 @@
               <span class="main-screen__button-destop">Получить бесплатную консультацию</span>
               <span class="main-screen__button-mobile">Бесплатная консультация</span>
             </a>
-            <a class="main-screen__scrolldown" href="#">Скролл вниз</a>
+            <a class="main-screen__scrolldown" href="#section-advantages">Скролл вниз</a>
         </div>
       </div>
     </section>
   </div>
   <main class="main">
     <div class="adv-about-background">
-      <section class="advantages">
+      <section class="advantages" id="section-advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages__list">
           <div class="advantages__item">
@@ -123,6 +123,25 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="questions__content">
+        <form class="questions__form form" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="questions__header">Остались вопросы? Задайте их нам!</h2>
+          <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
+          <label class="visually-hidden" for="questions__name">Имя</label>
+          <input class="questions__name form__textfiled" type="text" name="name"
+            id="questions__name" placeholder="Имя" required>
+          <label class="visually-hidden" for="questions__phone">Телефон</label>
+          <input class="questions__phone form__textfiled" type="tel" name="phone"
+              id="questions__phone" placeholder="Телефон" required>
+          <label class="visually-hidden" for="questions__question">Телефон</label>
+          <textarea class="questions__question form__textarea" name="question" placeholder="Ваш вопрос" id="questions__question" required></textarea>
+          <button class="questions__button button button--white">Задать вопрос</button>
+          <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="questions__agree">
+          <label class="questions__agree form__checkbox-label" for="questions__agree">Я согласен на обработку  персональных данных</label>
+        </form>
       </div>
     </section>
   </main>
