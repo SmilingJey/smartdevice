@@ -4,7 +4,7 @@
   &__content {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 58px 25px 111px;
+    padding: 58px 25px 81px;
   }
 
   &__header {
@@ -18,19 +18,21 @@
   }
 
   &__list {
-    margin-right: -15px;
-    margin-left: -15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style: none;
     padding: 0;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
   }
 
   &__item {
     margin-right: 15px;
     margin-left: 15px;
+    margin-bottom: 30px;
     padding: 0;
-    width: 33%;
+    width: calc(33% - 26px);
     background-size: cover;
     background-position: center;
 
