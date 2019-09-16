@@ -57,22 +57,31 @@
 @media (max-width: $mobile-width) {
   .footer-nav {
     position: relative;
-    padding: 29px 15px 2px;
+    padding: 37px 15px 3px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
 
+    &__header {
+      line-height: 0;
+    }
+
     &__list {
-      display: none;
       margin-top: 32px;
-      margin-bottom: 20px;
+      max-height: 0;
+      margin-bottom: 0;
+      transition: max-height 0.4s ease-out, margin-bottom 0.4s ease-out;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: nowrap;
     }
 
     &__toggle {
       position: absolute;
-      top: 29px;
-      right: 17px;
+      top: 0;
+      left: 0;
+      right: 0;
       display: block;
-      width: 17px;
-      height: 17px;
+      height: 73px;
+      z-index: 1;
 
       &::before,
       &::after {
@@ -83,26 +92,28 @@
       }
 
       &::before {
-        top: 8px;
-        left: 0;
+        top: 36px;
+        right: 16px;
         width: 17px;
         height: 1px;
       }
 
       &::after {
-        top: 0;
-        left: 8px;
+        top: 28px;
+        right: 24px;
         width: 1px;
         height: 17px;
       }
     }
 
-    &__toggle-checkbox:checked ~ &__list {
-      display: flex;
-    }
-
     &__toggle-checkbox:checked ~ &__toggle::after {
       display: none;
+    }
+
+    &__toggle-checkbox:checked ~ &__list {
+      max-height: 500px;
+      margin-bottom: 27px;
+      transition: max-height 0.4s ease-in, margin-bottom 0.4s ease-in;
     }
   }
 }
