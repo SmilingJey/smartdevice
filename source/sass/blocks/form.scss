@@ -39,6 +39,17 @@
       height: 16px;
       border: 1px solid #ffffff;
     }
+
+    &--popup {
+      padding-top: 8px;
+      padding-left: 47px;
+    }
+  }
+
+  &__checkbox:focus + &__checkbox-label {
+    &::before {
+      outline: 1px solid #1b2d37;
+    }
   }
 
   &__checkbox:checked + &__checkbox-label {

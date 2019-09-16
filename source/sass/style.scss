@@ -30,6 +30,10 @@ body {
   flex-direction: column;
 }
 
+.body-noscroll {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;

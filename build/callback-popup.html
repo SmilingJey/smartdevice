@@ -1,0 +1,19 @@
+<div class="callback-popup__window">
+  <button class="callback-popup__close">
+    <span class="visually-hidden">Закрыть попап</span>
+  </button>
+  <h2 class="callback-popup__header">Закажите звонок</h2>
+  <p class="callback-popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+  <form class="callback-popup__form form" method="post" action="https://echo.htmlacademy.ru">
+    <label class="visually-hidden" for="callback-popup__name">Имя</label>
+    <input class="callback-popup__name form__textfiled" type="text" name="name" id="callback-popup__name" placeholder="Имя" required="">
+    <label class="visually-hidden" for="callback-popup__phone">Телефон</label>
+    <input class="callback-popup__phone form__textfiled" type="tel" name="phone" id="callback-popup__phone" placeholder="Телефон" required="">
+    <label class="visually-hidden" for="callback-popup__question">Телефон</label>
+    <textarea class="callback-popup__question form__textarea" name="question" placeholder="Ваш вопрос" id="callback-popup__question" required=""></textarea>
+    <button class="callback-popup__button button button--white" type="submit">Отправить</button>
+    <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="callback-popup__agree">
+    <label class="callback-popup__agree form__checkbox-label form__checkbox-label--popup" for="callback-popup__agree">Я согласен на обработку персональных данных</label>
+  </form>
+</div>
+

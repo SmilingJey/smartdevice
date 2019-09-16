@@ -28,7 +28,7 @@
           <span class="header__link-text">+7 (495) 000 52 52</span>
         </a>
       </div>
-      <button class="header__callback button button--white" href="#">
+      <button class="header__callback button button--white">
         Заказать звонок
       </button>
     </header>
@@ -97,7 +97,7 @@
       <section class="about">
         <h2 class="about__header">О компании</h2>
         <p class="about__text">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
-        <p class="about__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__tablet-show">..</span><span class="about__tablet-none">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+        <p class="about__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__tablet-show">..</span><span class="about__tablet-none">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         <a class="about__button button button--whiteblue" href="#">Подробнее</a>
       </section>
     </div>
@@ -118,7 +118,7 @@
             </a>
           </li>
           <li class="service__item service__item--accessory">
-            <a class="service__link" href="#">
+            <a class="service__link service__link--accessory" href="#">
               Комплектующие<br/> для светотехники
             </a>
           </li>
@@ -138,7 +138,7 @@
               id="questions__phone" placeholder="Телефон" required>
           <label class="visually-hidden" for="questions__question">Телефон</label>
           <textarea class="questions__question form__textarea" name="question" placeholder="Ваш вопрос" id="questions__question" required></textarea>
-          <button class="questions__button button button--white">Задать вопрос</button>
+          <button class="questions__button button button--white" type="submit">Задать вопрос</button>
           <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="questions__agree">
           <label class="questions__agree form__checkbox-label" for="questions__agree">Я согласен на обработку  персональных данных</label>
         </form>
@@ -232,5 +232,28 @@
       </div>
     </div>
   </footer>
+  <section class="callback-popup">
+    <div class="callback-popup__window">
+      <button class="callback-popup__close">
+        <span class="visually-hidden">Закрыть попап</span>
+      </button>
+      <h2 class="callback-popup__header">Закажите звонок</h2>
+      <p class="callback-popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="callback-popup__form form" method="post" action="https://echo.htmlacademy.ru">
+        <label class="visually-hidden" for="callback-popup__name">Имя</label>
+        <input class="callback-popup__name form__textfiled" type="text" name="name"
+          id="callback-popup__name" placeholder="Имя" required>
+        <label class="visually-hidden" for="callback-popup__phone">Телефон</label>
+        <input class="callback-popup__phone form__textfiled" type="tel" name="phone"
+            id="callback-popup__phone" placeholder="Телефон" required>
+        <label class="visually-hidden" for="callback-popup__question">Телефон</label>
+        <textarea class="callback-popup__question form__textarea" name="question" placeholder="Ваш вопрос" id="callback-popup__question" required></textarea>
+        <button class="callback-popup__button button button--white" type="submit">Отправить</button>
+        <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="callback-popup__agree">
+        <label class="callback-popup__agree form__checkbox-label form__checkbox-label--popup" for="callback-popup__agree">Я согласен на обработку персональных данных</label>
+      </form>
+    </div>
+  </section>
+  <script src="js/callback-popup.js"></script>
 </body>
 </html>
