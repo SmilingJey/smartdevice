@@ -23,6 +23,11 @@
     font-style: normal;
     opacity: 0.5;
   }
+
+  &__tel {
+    text-decoration: none;
+    color: #1b2d37;
+  }
 }
 
 @media (max-width: $mobile-width) {
