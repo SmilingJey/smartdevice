@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
+  <script src="js/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
             <span class="logo__top">Smart Device</span>
             <span class="logo__bottom">умные технологии</span>
         </a>
-        <button class="header__menu-toogle" aria-label="показать меню"></button>
+        <button class="header__menu-toogle" aria-label="показать меню" type="button"></button>
       </div>
       <div class="header__links">
         <a class="header__link header__link--email" href="mailto:info@sd.ru">
@@ -28,7 +29,7 @@
           <span class="header__link-text">+7 (495) 000 52 52</span>
         </a>
       </div>
-      <button class="header__callback button button--white">
+      <button class="header__callback button button--white" type="button">
         Заказать звонок
       </button>
     </header>
@@ -139,8 +140,10 @@
           <label class="visually-hidden" for="questions__question">Телефон</label>
           <textarea class="questions__question form__textarea" name="question" placeholder="Ваш вопрос" id="questions__question" required></textarea>
           <button class="questions__button button button--white" type="submit">Задать вопрос</button>
-          <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="questions__agree">
-          <label class="questions__agree form__checkbox-label" for="questions__agree">Я согласен на обработку  персональных данных</label>
+          <div class="questions__agree-checkbox">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="questions__agree">
+            <label class="questions__agree form__checkbox-label" for="questions__agree">Я согласен на обработку  персональных данных</label>
+          </div>
         </form>
       </div>
     </section>
@@ -155,17 +158,26 @@
         <p class="footer__years-text">1999-2018 SD Service Devices</p>
         <ul class="footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link" href="#">
+              <svg width="27" height="27">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--odnoklassnik" href="#">
+            <a class="social__link" href="#">
+              <svg width="27" height="27">
+                <use xlink:href="#icon-odnoklassniki"></use>
+              </svg>
               <span class="visually-hidden">Одноклассники</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link" href="#">
+              <svg width="27" height="27">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
@@ -204,7 +216,7 @@
         </nav>
         <div class="footer__address footer-address">
           <h2 class="footer-address__header">Наш офис</h2>
-          <input class="visually-hidden footer-address__toggle-checkbox" type="checkbox" id="footer-address__toggle" name="footer-address__toggle">
+          <input class="visually-hidden footer-address__toggle-checkbox" type="checkbox" id="footer-address__toggle" name="footer-address__toggle" checked>
           <label class="footer-address__toggle" for="footer-address__toggle">
             <span class="visually-hidden">Показать навигацию</span>
           </label>
@@ -234,7 +246,7 @@
   </footer>
   <section class="callback-popup">
     <div class="callback-popup__window">
-      <button class="callback-popup__close">
+      <button class="callback-popup__close" type="button">
         <span class="visually-hidden">Закрыть попап</span>
       </button>
       <h2 class="callback-popup__header">Закажите звонок</h2>
@@ -248,12 +260,15 @@
             id="callback-popup__phone" placeholder="Телефон" required>
         <label class="visually-hidden" for="callback-popup__question">Телефон</label>
         <textarea class="callback-popup__question form__textarea" name="question" placeholder="Ваш вопрос" id="callback-popup__question" required></textarea>
+
         <button class="callback-popup__button button button--white" type="submit">Отправить</button>
-        <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="callback-popup__agree">
-        <label class="callback-popup__agree form__checkbox-label form__checkbox-label--popup" for="callback-popup__agree">Я согласен на обработку персональных данных</label>
+        <div class="callback-popup__agree-checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="agree" id="callback-popup__agree">
+          <label class="callback-popup__agree form__checkbox-label form__checkbox-label--popup" for="callback-popup__agree">Я согласен на обработку персональных данных</label>
+        </div>
       </form>
     </div>
   </section>
-  <script src="js/callback-popup.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

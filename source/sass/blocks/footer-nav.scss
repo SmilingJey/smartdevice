@@ -33,6 +33,10 @@
     text-decoration: none;
     font-style: normal;
     opacity: 0.5;
+
+    &:hover {
+      color: #00b2ff;
+    }
   }
 
   &__toggle {

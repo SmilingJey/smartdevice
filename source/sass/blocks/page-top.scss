@@ -1,11 +1,20 @@
 .page-top {
   background-color: #1b2d37;
-  background-image: url("../img/page-top-background.png");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
 
+  background-image: url("../img/page-top-background.png");
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/page-top-background@2x.png");
+  }
+
+  @include nest-parent(".webp ") {
+    background-image: url("../img/page-top-background.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/page-top-background@2x.webp");
+    }
   }
 }

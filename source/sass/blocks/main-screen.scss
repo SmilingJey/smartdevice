@@ -2,13 +2,21 @@
   &__image {
     max-width: 1569px;
     margin: 0 auto;
-    background-image: url("../img/main-d.png");
     background-repeat: no-repeat;
     background-position: calc(30% + 599px) 23px;
+    background-image: url("../img/main-d.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/main-d@2x.png");
       background-size: 713px 655px;
+    }
+
+    @include nest-parent(".webp ") {
+      background-image: url("../img/main-d.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-d@2x.webp");
+      }
     }
   }
 
@@ -81,6 +89,10 @@
     font-style: normal;
     transform: rotate(-90deg);
     opacity: 0.5;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -126,6 +138,14 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/main-t@2x.png");
         background-size: 520px 385px;
+      }
+
+      @include nest-parent(".webp ") {
+        background-image: url("../img/main-t.webp");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/main-t@2x.webp");
+        }
       }
     }
 
@@ -180,8 +200,16 @@
       background-position: calc(50% + 168px) 4px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/main-m@2x.png");
+        background-image: url("../img/main-m.png");
         background-size: 603px 368px;
+      }
+
+      @include nest-parent(".webp ") {
+        background-image: url("../img/main-m.webp");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/main-m.webp");
+        }
       }
     }
   }

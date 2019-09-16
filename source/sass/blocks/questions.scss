@@ -11,6 +11,13 @@
     background-size: 665px 487px, 100%;
   }
 
+  @include nest-parent(".webp ") {
+    background-image: url("../img/form_plane.webp"), url("../img/form_triangles.svg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/form_plane@2x.webp"), url("../img/form_triangles.svg");
+    }
+  }
 
   &__content {
     max-width: 1220px;
@@ -36,7 +43,7 @@
   &__name,
   &__phone,
   &__button,
-  &__agree {
+  &__agree-checkbox {
     width: calc(50% - 15px);
   }
 
@@ -78,7 +85,7 @@
     font-size: 14px;
     line-height: 16px;
     color: rgba(#ffffff, 0.8);
-    width: calc(50% - 24px);
+    margin-left: 9px;
   }
 }
 
@@ -88,6 +95,14 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: none;
+    }
+
+    @include nest-parent(".webp ") {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
     }
 
     &__content {
@@ -158,7 +173,7 @@
     &__name,
     &__phone,
     &__button,
-    &__agree {
+    &__agree-checkbox {
       width: 100%;
     }
   }

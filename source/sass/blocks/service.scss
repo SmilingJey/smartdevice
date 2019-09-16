@@ -40,6 +40,14 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/service/production-d@2x.jpg");
       }
+
+      @include nest-parent(".webp ") {
+        background-image: url("../img/service/production-d.webp");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/production-d@2x.webp");
+        }
+      }
     }
 
     &--mount {
@@ -48,6 +56,14 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/service/mount-d@2x.jpg");
       }
+
+      @include nest-parent(".webp ") {
+        background-image: url("../img/service/mount-d.webp");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/mount-d@2x.webp");
+        }
+      }
     }
 
     &--accessory {
@@ -55,6 +71,14 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/service/accessory-d@2x.jpg");
+      }
+
+      @include nest-parent(".webp ") {
+        background-image: url("../img/service/accessory-d.webp");
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/service/accessory-d@2x.webp");
+        }
       }
     }
   }
@@ -72,6 +96,10 @@
     background-color: rgba(#1b2d37, 0.8);
     padding: 50px 45px;
     position: relative;
+
+    &:hover {
+      background-color: rgba(#1b2d37, 0.6);
+    }
 
     &::before {
       content: "";
@@ -117,6 +145,14 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/service/production-t@2x.jpg");
         }
+
+        @include nest-parent(".webp ") {
+          background-image: url("../img/service/production-t.webp");
+
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/service/production-t@2x.webp");
+          }
+        }
       }
 
       &--mount {
@@ -125,6 +161,14 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/service/mount-t@2x.jpg");
         }
+
+        @include nest-parent(".webp ") {
+          background-image: url("../img/service/mount-t.webp");
+
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/service/mount-t@2x.webp");
+          }
+        }
       }
 
       &--accessory {
@@ -132,6 +176,14 @@
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/service/accessory-t@2x.jpg");
+        }
+
+        @include nest-parent(".webp ") {
+          background-image: url("../img/service/accessory-t.webp");
+
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/service/accessory-t@2x.webp");
+          }
         }
       }
     }
@@ -168,6 +220,14 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/service/production-m@2x.jpg");
         }
+
+        @include nest-parent(".webp ") {
+          background-image: url("../img/service/production-m.webp");
+
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/service/production-m@2x.webp");
+          }
+        }
       }
 
       &--mount {
@@ -176,6 +236,14 @@
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/service/mount-m@2x.jpg");
         }
+
+        @include nest-parent(".webp ") {
+          background-image: url("../img/service/mount-m.webp");
+
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/service/mount-m@2x.webp");
+          }
+        }
       }
 
       &--accessory {
@@ -183,6 +251,14 @@
 
         @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
           background-image: url("../img/service/accessory-m@2x.jpg");
+        }
+
+        @include nest-parent(".webp ") {
+          background-image: url("../img/service/accessory-m.webp");
+
+          @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+            background-image: url("../img/service/accessory-m@2x.webp");
+          }
         }
       }
     }

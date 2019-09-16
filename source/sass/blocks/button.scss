@@ -20,18 +20,30 @@
     color: #ffffff;
     background-color: transparent;
     border-color: #ffffff;
+
+    &:hover {
+      background-color: rgba(#ffffff, 0.2);
+    }
   }
 
   &--blue {
     color: #ffffff;
     background-color: #00b2ff;
     border-color: #00b2ff;
+
+    &:hover {
+      background-color: lighten(#00b2ff, 10%);
+    }
   }
 
   &--whiteblue {
     color: #00b2ff;
     background-color: #ffffff;
     border-color: #00b2ff;
+
+    &:hover {
+      background-color: rgba(#00b2ff, 0.2);
+    }
   }
 
   &--big {

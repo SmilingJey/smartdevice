@@ -9,6 +9,7 @@
       callbackPopupElement.classList.add('callback-popup--open');
       window.addEventListener('keydown', closeCallbackPopupOnESC);
       document.querySelector('body').classList.add('body-noscroll');
+      callbackPopupElement.querySelector('.callback-popup__name').focus();
     };
 
     var closeCallbackPopup = function () {

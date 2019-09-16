@@ -16,28 +16,10 @@
     display: block;
     width: 27px;
     height: 27px;
+    fill: #cdcdcd;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 27px;
-      height: 27px;
-      background-repeat: no-repeat;
-    }
-
-    &--facebook::before {
-      background-image: url("../img/facebook.svg");
-    }
-
-    &--odnoklassnik::before {
-      background-image: url("../img/odnoklass.svg");
-    }
-
-    &--vk::before {
-      background-image: url("../img/vk.svg");
+    &:hover {
+      fill: #00b2ff;
     }
   }
 }

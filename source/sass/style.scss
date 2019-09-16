@@ -39,4 +39,11 @@ img {
   height: auto;
 }
 
+@mixin nest-parent($child) {
+  /* stylelint-disable-next-line */
+  @at-root #{selector-nest($child , &)} {
+    @content;
+  }
+}
+
 @import "blocks/**/*";

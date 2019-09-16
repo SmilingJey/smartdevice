@@ -12,6 +12,14 @@
     background-size: 115px 305px;
   }
 
+  @include nest-parent(".webp ") {
+    background-image: url("../img/about2005-d.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about2005-d@2x.webp");
+    }
+  }
+
   &__header {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
@@ -53,6 +61,14 @@
       background-size: 131px 347px;
     }
 
+    @include nest-parent(".webp ") {
+      background-image: url("../img/about2005-t.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/about2005-t@2x.webp");
+      }
+    }
+
     &__header {
       font-size: 32px;
       line-height: 140.62%;
@@ -82,6 +98,19 @@
 @media (max-width: $mobile-width) {
   .about {
     background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+
+    @include nest-parent(".webp ") {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+
     padding: 17px 13px 82px 14px;
 
     &__header {
