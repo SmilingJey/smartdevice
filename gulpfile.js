@@ -137,7 +137,10 @@ gulp.task('jscopy', function () {
 var concatScripts = [
   'build/js/callback-popup.js',
   'build/js/smoothscroll.js',
-  'build/js/scrolldown.js'
+  'build/js/scrolldown.js',
+  'build/js/scrolldown.js',
+  'build/js/imask.js',
+  'build/js/setup-form-mask.js'
 ];
 
 gulp.task('jsmin', function () {
