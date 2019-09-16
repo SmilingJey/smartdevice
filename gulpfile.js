@@ -135,7 +135,9 @@ gulp.task('jscopy', function () {
 });
 
 var concatScripts = [
-  'build/js/callback-popup.js'
+  'build/js/callback-popup.js',
+  'build/js/smoothscroll.js',
+  'build/js/scrolldown.js'
 ];
 
 gulp.task('jsmin', function () {
